@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_boom_crm_lead_user,boom.crm.lead.user,model_crm_lead,,1,1,1,0
+access_boom_crm_lead_manager,boom.crm.lead.manager,model_crm_lead,base.group_user,1,1,1,1
