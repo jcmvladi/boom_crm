@@ -1,14 +1,16 @@
-    Módulo de Personalizaciones CRM - Boom Solutions Odoo V18
+Módulo de Personalizaciones CRM - Boom Solutions Odoo V18
 
 Para instalar y utilizar este módulo, es imprescindible disponer previamente de una instalación funcional de Odoo 18 en tu entorno. Este módulo actúa como una extensión del sistema Odoo base y, por lo tanto, requiere que el framework principal esté configurado y operativo.
 
-    Descripción Breve del Módulo
+Descripción Breve del Módulo
+
 Este módulo personalizado extiende el módulo CRM nativo de Odoo 18 para añadir funcionalidades y campos adicionales al modelo crm.lead, según los requisitos de la Prueba Técnica de Desarrollo Odoo V18. Su objetivo es mejorar la gestión de leads con información más detallada y un proceso de aprobación claro.
 
-    Funcionalidades Implementadas
+Funcionalidades Implementadas
+
 El módulo añade las siguientes funcionalidades y campos a la vista formulario:
 
-    Nuevos Campos Personalizados:
+Nuevos Campos Personalizados:
 
 - x_lead_category: Campo de selección (Selection) con opciones: 'residencial', 'empresarial', 'gubernamental'.
 - x_delivery_deadline: Campo de fecha (Date) que indica la fecha límite para procesar el lead.
@@ -20,19 +22,21 @@ El módulo añade las siguientes funcionalidades y campos a la vista formulario:
 - x_contract_reference: Campo de texto (Char) para una referencia de contrato.
 - x_support_required: Campo booleano (Boolean) que indica si el lead requiere soporte posterior.
 
-    Botón "Aprobar Lead":
+Botón "Aprobar Lead":
 Un botón (Button) en la cabecera del formulario.
 Al hacer clic, rellena automáticamente los campos x_approved_by (con el usuario actual), x_approved_date (con la fecha y hora actuales), y x_delivery_deadline (con la fecha actual, según la interpretación del requisito). Una vez aprobado, el botón se oculta y los campos de aprobación se vuelven de solo lectura.
 
-    Datos de Demostración:
+Datos de Demostración:
 Incluye un archivo demo_data.xml con dos registros de ejemplo de Oportunidades que contienen datos para los nuevos campos personalizados.
 
 Pasos de Instalación
 
-    Clonar/Descargar el Repositorio:
+Clonar/Descargar el Repositorio:
+
 Obtén el código de este módulo desde el repositorio de GitHub git clone https://github.com/jcmvladi/boom_crm.git
 
-    Copiar al Directorio de Addons de Odoo:
+Copiar al Directorio de Addons de Odoo:
+
 Coloca la carpeta del módulo dentro del directorio addons de tu instalación de Odoo 18 o tu carpeta modules.
 
 Ejemplo de ruta: /path/to/odoo/odoo-server/addons/boom_crm
